@@ -1,0 +1,1009 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "bmw-group-ci-2015-icons";
+  src:url("/press-frontend/resources/fonts/bmw-group-ci-2015-icons/bmw-group-ci-2015-icons.eot");
+  src:url("/press-frontend/resources/fonts/bmw-group-ci-2015-icons/bmw-group-ci-2015-icons.eot?#iefix") format("embedded-opentype"),
+    url("/press-frontend/resources/fonts/bmw-group-ci-2015-icons/bmw-group-ci-2015-icons.woff") format("woff"),
+    url("/press-frontend/resources/fonts/bmw-group-ci-2015-icons/bmw-group-ci-2015-icons.ttf") format("truetype"),
+    url("/press-frontend/resources/fonts/bmw-group-ci-2015-icons/bmw-group-ci-2015-icons.svg#bmw-group-ci-2015-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'new-twitter-icon';
+  src:url("/press-frontend/resources/fonts/new-twitter-icon/new-twitter-icon.eot");
+  src: url('/press-frontend/resources/fonts/new-twitter-icon/new-twitter-icon.eot?#iefix') format('embedded-opentype'),
+    url("/press-frontend/resources/fonts/new-twitter-icon/new-twitter-icon.woff") format("woff"),
+    url("/press-frontend/resources/fonts/new-twitter-icon/new-twitter-icon.svg#new-twitter-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "bmw-group-ci-2015-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* disallow icons to be selected (particularly effects Windows Phone) */
+[class^="bmw-ci-"],
+[class*=" bmw-ci-"] {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  user-select:none;
+  -o-user-select:none;
+}
+
+[class^="bmw-ci-"]:before,
+[class*=" bmw-ci-"]:before {
+  font-family: "bmw-group-ci-2015-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bmw-ci-anker-sm:before {
+  content: "\61";
+}
+.bmw-ci-anker-med:before {
+  content: "\62";
+}
+.bmw-ci-anker-lg:before {
+  content: "\63";
+}
+.bmw-ci-attachment-sm:before {
+  content: "\64";
+}
+.bmw-ci-attachment-med:before {
+  content: "\65";
+}
+.bmw-ci-attachment-lg:before {
+  content: "\66";
+}
+.bmw-ci-audiostream-sm:before {
+  content: "\67";
+}
+.bmw-ci-audiostream-med:before {
+  content: "\68";
+}
+.bmw-ci-audiostream-lg:before {
+  content: "\69";
+}
+.bmw-ci-calendar-sm:before {
+  content: "\6a";
+}
+.bmw-ci-calendar-med:before {
+  content: "\6b";
+}
+.bmw-ci-calendar-lg:before {
+  content: "\6c";
+}
+.bmw-ci-chapters-sm:before {
+  content: "\6d";
+}
+.bmw-ci-chapters-med:before {
+  content: "\6e";
+}
+.bmw-ci-chapters-lg:before {
+  content: "\6f";
+}
+.bmw-ci-checkmark-sm:before {
+  content: "\70";
+}
+.bmw-ci-checkmark-med:before {
+  content: "\71";
+}
+.bmw-ci-checkmark-lg:before {
+  content: "\72";
+}
+.bmw-ci-close-sm:before {
+  content: "\73";
+}
+.bmw-ci-close-med:before {
+  content: "\74";
+}
+.bmw-ci-close-lg:before {
+  content: "\75";
+}
+.bmw-ci-collapse-sm:before {
+  content: "\76";
+}
+.bmw-ci-collapse-med:before {
+  content: "\77";
+}
+.bmw-ci-collapse-lg:before {
+  content: "\78";
+}
+.bmw-ci-comments-sm:before {
+  content: "\79";
+}
+.bmw-ci-comments-med:before {
+  content: "\7a";
+}
+.bmw-ci-comments-lg:before {
+  content: "\41";
+}
+.bmw-ci-contact-sm:before {
+  content: "\42";
+}
+.bmw-ci-contact-med:before {
+  content: "\43";
+}
+.bmw-ci-contact-lg:before {
+  content: "\44";
+}
+.bmw-ci-delete-sm:before {
+  content: "\45";
+}
+.bmw-ci-delete-med:before {
+  content: "\46";
+}
+.bmw-ci-delete-lg:before {
+  content: "\47";
+}
+.bmw-ci-delicious-sm:before {
+  content: "\48";
+}
+.bmw-ci-delicious-med:before {
+  content: "\49";
+}
+.bmw-ci-delicious-lg:before {
+  content: "\4a";
+}
+.bmw-ci-digg-sm:before {
+  content: "\4b";
+}
+.bmw-ci-digg-med:before {
+  content: "\4c";
+}
+.bmw-ci-digg-lg:before {
+  content: "\4d";
+}
+.bmw-ci-document-sm:before {
+  content: "\4e";
+}
+.bmw-ci-document-med:before {
+  content: "\4f";
+}
+.bmw-ci-document-lg:before {
+  content: "\50";
+}
+.bmw-ci-document-audio-sm:before {
+  content: "\51";
+}
+.bmw-ci-document-audio-med:before {
+  content: "\52";
+}
+.bmw-ci-document-audio-lg:before {
+  content: "\53";
+}
+.bmw-ci-document-calendar-sm:before {
+  content: "\54";
+}
+.bmw-ci-document-calendar-med:before {
+  content: "\55";
+}
+.bmw-ci-document-calendar-lg:before {
+  content: "\56";
+}
+.bmw-ci-document-chart-sm:before {
+  content: "\57";
+}
+.bmw-ci-document-chart-med:before {
+  content: "\58";
+}
+.bmw-ci-document-chart-lg:before {
+  content: "\59";
+}
+.bmw-ci-document-img-sm:before {
+  content: "\5a";
+}
+.bmw-ci-document-img-med:before {
+  content: "\30";
+}
+.bmw-ci-document-img-lg:before {
+  content: "\31";
+}
+.bmw-ci-document-pdf-sm:before {
+  content: "\32";
+}
+.bmw-ci-document-pdf-med:before {
+  content: "\33";
+}
+.bmw-ci-document-pdf-lg:before {
+  content: "\34";
+}
+.bmw-ci-document-presentation-sm:before {
+  content: "\35";
+}
+.bmw-ci-document-presentation-med:before {
+  content: "\36";
+}
+.bmw-ci-document-presentation-lg:before {
+  content: "\37";
+}
+.bmw-ci-document-text-sm:before {
+  content: "\38";
+}
+.bmw-ci-document-text-med:before {
+  content: "\39";
+}
+.bmw-ci-document-text-lg:before {
+  content: "\21";
+}
+.bmw-ci-document-video-sm:before {
+  content: "\22";
+}
+.bmw-ci-document-video-med:before {
+  content: "\23";
+}
+.bmw-ci-document-video-lg:before {
+  content: "\24";
+}
+.bmw-ci-down-nav-sm:before {
+  content: "\25";
+}
+.bmw-ci-down-nav-med:before {
+  content: "\26";
+}
+.bmw-ci-down-nav-lg:before {
+  content: "\27";
+}
+.bmw-ci-download-sm:before {
+  content: "\28";
+}
+.bmw-ci-sourceLocation-sm:before {
+  /*content: url("/press-frontend/resources/img/views_49_communication_negativ_default.png");*/
+  background-image: url('/press-frontend/resources/img/views_49_communication_negativ_default.png');
+  background-size: 28px 25px;
+  display: inline-block;
+  width: 28px;
+  height: 25px;
+  margin-top: -4pt;
+  margin-left: -5pt;
+  content:"";
+}
+.bmw-ci-download-med:before {
+  content: "\29";
+}
+.bmw-ci-download-lg:before {
+  content: "\2a";
+}
+.bmw-ci-expand-sm:before {
+  content: "\2b";
+}
+.bmw-ci-expand-med:before {
+  content: "\2c";
+}
+.bmw-ci-expand-lg:before {
+  content: "\2d";
+}
+.bmw-ci-explore-sm:before {
+  content: "\2e";
+}
+.bmw-ci-explore-med:before {
+  content: "\2f";
+}
+.bmw-ci-explore-lg:before {
+  content: "\3a";
+}
+.bmw-ci-facebook-sm:before {
+  content: "\3b";
+}
+.bmw-ci-facebook-med:before {
+  content: "\3c";
+}
+.bmw-ci-facebook-lg:before {
+  content: "\3d";
+}
+.bmw-ci-favorite-sm:before {
+  content: "\3e";
+}
+.bmw-ci-favorite-med:before {
+  content: "\3f";
+}
+.bmw-ci-favorite-lg:before {
+  content: "\40";
+}
+.bmw-ci-filter-sm:before {
+  content: "\5b";
+}
+.bmw-ci-filter-med:before {
+  content: "\5d";
+}
+.bmw-ci-filter-lg:before {
+  content: "\5e";
+}
+.bmw-ci-footage-sm:before {
+  content: "\5f";
+}
+.bmw-ci-footage-med:before {
+  content: "\60";
+}
+.bmw-ci-footage-lg:before {
+  content: "\7b";
+}
+.bmw-ci-fullscreen-sm:before {
+  content: "\7c";
+}
+.bmw-ci-fullscreen-med:before {
+  content: "\7d";
+}
+.bmw-ci-fullscreen-lg:before {
+  content: "\7e";
+}
+.bmw-ci-google-plus-sm:before {
+  content: "\5c";
+}
+.bmw-ci-google-plus-med:before {
+  content: "\e000";
+}
+.bmw-ci-google-plus-lg:before {
+  content: "\e001";
+}
+.bmw-ci-help-sm:before {
+  content: "\e002";
+}
+.bmw-ci-help-med:before {
+  content: "\e003";
+}
+.bmw-ci-help-lg:before {
+  content: "\e004";
+}
+.bmw-ci-hd-sm:before {
+  content: "\e005";
+}
+.bmw-ci-hd-med:before {
+  content: "\e006";
+}
+.bmw-ci-hd-lg:before {
+  content: "\e007";
+}
+.bmw-ci-home-sm:before {
+  content: "\e008";
+}
+.bmw-ci-gallery-sm:before {
+  content: "\e00b";
+}
+.bmw-ci-gallery-med:before {
+  content: "\e00c";
+}
+.bmw-ci-gallery-lg:before {
+  content: "\e00d";
+}
+.bmw-ci-camera-sm:before {
+  content: "\e00e";
+}
+.bmw-ci-camera-med:before {
+  content: "\e00f";
+}
+.bmw-ci-camera-lg:before {
+  content: "\e010";
+}
+.bmw-ci-info-sm:before {
+  content: "\e011";
+}
+.bmw-ci-info-med:before {
+  content: "\e012";
+}
+.bmw-ci-info-lg:before {
+  content: "\e013";
+}
+.bmw-ci-instagram-sm:before {
+  content: "\e014";
+}
+.bmw-ci-instagram-med:before {
+  content: "\e015";
+}
+.bmw-ci-instagram-lg:before {
+  content: "\e016";
+}
+.bmw-ci-pointer-sm:before {
+  content: "\e017";
+}
+.bmw-ci-pointer-med:before {
+  content: "\e018";
+}
+.bmw-ci-pointer-lg:before {
+  content: "\e019";
+}
+.bmw-ci-linkedin-sm:before {
+  content: "\e01a";
+}
+.bmw-ci-linkedin-med:before {
+  content: "\e01b";
+}
+.bmw-ci-linkedin-lg:before {
+  content: "\e01c";
+}
+.bmw-ci-livestream-sm:before {
+  content: "\e01d";
+}
+.bmw-ci-livestream-med:before {
+  content: "\e01e";
+}
+.bmw-ci-livestream-lg:before {
+  content: "\e01f";
+}
+.bmw-ci-login-sm:before {
+  content: "\e020";
+}
+.bmw-ci-login-med:before {
+  content: "\e021";
+}
+.bmw-ci-login-lg:before {
+  content: "\e022";
+}
+.bmw-ci-logout-sm:before {
+  content: "\e023";
+}
+.bmw-ci-logout-med:before {
+  content: "\e024";
+}
+.bmw-ci-logout-lg:before {
+  content: "\e025";
+}
+.bmw-ci-no-hd-sm:before {
+  content: "\e026";
+}
+.bmw-ci-no-hd-med:before {
+  content: "\e027";
+}
+.bmw-ci-no-hd-lg:before {
+  content: "\e028";
+}
+.bmw-ci-mail-sm:before {
+  content: "\e029";
+}
+.bmw-ci-mail-med:before {
+  content: "\e02a";
+}
+.bmw-ci-mail-lg:before {
+  content: "\e02b";
+}
+.bmw-ci-maplocation-sm:before {
+  content: "\e02c";
+}
+.bmw-ci-maplocation-med:before {
+  content: "\e02d";
+}
+.bmw-ci-maplocation-lg:before {
+  content: "\e02e";
+}
+.bmw-ci-maximize-sm:before {
+  content: "\e02f";
+}
+.bmw-ci-maximize-med:before {
+  content: "\e030";
+}
+.bmw-ci-maximize-lg:before {
+  content: "\e031";
+}
+.bmw-ci-menu-sm:before {
+  content: "\e032";
+}
+.bmw-ci-menu-med:before {
+  content: "\e033";
+}
+.bmw-ci-menu-lg:before {
+  content: "\e034";
+}
+.bmw-ci-minimize-sm:before {
+  content: "\e035";
+}
+.bmw-ci-minimize-med:before {
+  content: "\e036";
+}
+.bmw-ci-minimize-lg:before {
+  content: "\e037";
+}
+.bmw-ci-move-sm:before {
+  content: "\e038";
+}
+.bmw-ci-move-med:before {
+  content: "\e039";
+}
+.bmw-ci-move-lg:before {
+  content: "\e03a";
+}
+.bmw-ci-move-h-sm:before {
+  content: "\e03b";
+}
+.bmw-ci-move-h-med:before {
+  content: "\e03c";
+}
+.bmw-ci-move-h-lg:before {
+  content: "\e03d";
+}
+.bmw-ci-move-v-sm:before {
+  content: "\e03e";
+}
+.bmw-ci-move-v-med:before {
+  content: "\e03f";
+}
+.bmw-ci-move-v-lg:before {
+  content: "\e040";
+}
+.bmw-ci-mute-sm:before {
+  content: "\e041";
+}
+.bmw-ci-mute-med:before {
+  content: "\e042";
+}
+.bmw-ci-mute-lg:before {
+  content: "\e043";
+}
+.bmw-ci-next-nav-sm:before {
+  content: "\e044";
+}
+.bmw-ci-next-nav-med:before {
+  content: "\e045";
+}
+.bmw-ci-next-nav-lg:before {
+  content: "\e046";
+}
+.bmw-ci-pageflip-next-sm:before {
+  content: "\e047";
+}
+.bmw-ci-pageflip-next-med:before {
+  content: "\e048";
+}
+.bmw-ci-pageflip-next-lg:before {
+  content: "\e049";
+}
+.bmw-ci-pageflip-prev-sm:before {
+  content: "\e04a";
+}
+.bmw-ci-pageflip-prev-med:before {
+  content: "\e04b";
+}
+.bmw-ci-pageflip-prev-lg:before {
+  content: "\e04c";
+}
+.bmw-ci-pause-sm:before {
+  content: "\e04d";
+}
+.bmw-ci-pause-on-sm:before {
+  content: "\e04e";
+}
+.bmw-ci-pause-med:before {
+  content: "\e04f";
+}
+.bmw-ci-pause-on-med:before {
+  content: "\e050";
+}
+.bmw-ci-pause-lg:before {
+  content: "\e051";
+}
+.bmw-ci-pause-on-lg:before {
+  content: "\e052";
+}
+.bmw-ci-phone-sm:before {
+  content: "\e053";
+}
+.bmw-ci-phone-med:before {
+  content: "\e054";
+}
+.bmw-ci-phone-lg:before {
+  content: "\e055";
+}
+.bmw-ci-pin-sm:before {
+  content: "\e056";
+}
+.bmw-ci-pin-med:before {
+  content: "\e057";
+}
+.bmw-ci-pin-lg:before {
+  content: "\e058";
+}
+.bmw-ci-pinterest-sm:before {
+  content: "\e059";
+}
+.bmw-ci-pinterest-med:before {
+  content: "\e05a";
+}
+.bmw-ci-pinterest-lg:before {
+  content: "\e05b";
+}
+.bmw-ci-prev-nav-sm:before {
+  content: "\e05c";
+}
+.bmw-ci-prev-nav-med:before {
+  content: "\e05d";
+}
+.bmw-ci-prev-nav-lg:before {
+  content: "\e05e";
+}
+.bmw-ci-print-sm:before {
+  content: "\e05f";
+}
+.bmw-ci-print-med:before {
+  content: "\e060";
+}
+.bmw-ci-print-lg:before {
+  content: "\e061";
+}
+.bmw-ci-reddit-sm:before {
+  content: "\e062";
+}
+.bmw-ci-reddit-med:before {
+  content: "\e063";
+}
+.bmw-ci-reddit-lg:before {
+  content: "\e064";
+}
+.bmw-ci-edit-sm:before {
+  content: "\e065";
+}
+.bmw-ci-edit-med:before {
+  content: "\e066";
+}
+.bmw-ci-edit-lg:before {
+  content: "\e067";
+}
+.bmw-ci-repeat-sm:before {
+  content: "\e068";
+}
+.bmw-ci-repeat-med:before {
+  content: "\e069";
+}
+.bmw-ci-repeat-lg:before {
+  content: "\e06a";
+}
+.bmw-ci-reset-sm:before {
+  content: "\e06b";
+}
+.bmw-ci-reset-med:before {
+  content: "\e06c";
+}
+.bmw-ci-reset-lg:before {
+  content: "\e06d";
+}
+.bmw-ci-rss-sm:before {
+  content: "\e06e";
+}
+.bmw-ci-rss-med:before {
+  content: "\e06f";
+}
+.bmw-ci-rss-lg:before {
+  content: "\e070";
+}
+.bmw-ci-scroll-down-sm:before {
+  content: "\e071";
+}
+.bmw-ci-scroll-down-med:before {
+  content: "\e072";
+}
+.bmw-ci-scroll-down-lg:before {
+  content: "\e073";
+}
+.bmw-ci-search-sm:before {
+  content: "\e074";
+}
+.bmw-ci-search-med:before {
+  content: "\e075";
+}
+.bmw-ci-search-lg:before {
+  content: "\e076";
+}
+.bmw-ci-share-sm:before {
+  content: "\e077";
+}
+.bmw-ci-share-med:before {
+  content: "\e078";
+}
+.bmw-ci-share-lg:before {
+  content: "\e079";
+}
+.bmw-ci-shuffle-sm:before {
+  content: "\e07a";
+}
+.bmw-ci-shuffle-med:before {
+  content: "\e07b";
+}
+.bmw-ci-shuffle-lg:before {
+  content: "\e07c";
+}
+.bmw-ci-skip-sm:before {
+  content: "\e07d";
+}
+.bmw-ci-skip-med:before {
+  content: "\e07e";
+}
+.bmw-ci-skip-lg:before {
+  content: "\e07f";
+}
+.bmw-ci-sound-sm:before {
+  content: "\e080";
+}
+.bmw-ci-sound-med:before {
+  content: "\e081";
+}
+.bmw-ci-sound-lg:before {
+  content: "\e082";
+}
+.bmw-ci-stock-down-sm:before {
+  content: "\e083";
+}
+.bmw-ci-stock-down-med:before {
+  content: "\e084";
+}
+.bmw-ci-stock-down-lg:before {
+  content: "\e085";
+}
+.bmw-ci-stock-falling-sm:before {
+  content: "\e086";
+}
+.bmw-ci-stock-falling-med:before {
+  content: "\e087";
+}
+.bmw-ci-stock-falling-lg:before {
+  content: "\e088";
+}
+.bmw-ci-stock-left-sm:before {
+  content: "\e089";
+}
+.bmw-ci-stock-left-med:before {
+  content: "\e08a";
+}
+.bmw-ci-stock-left-lg:before {
+  content: "\e08b";
+}
+.bmw-ci-stock-raising-sm:before {
+  content: "\e08c";
+}
+.bmw-ci-stock-raising-med:before {
+  content: "\e08d";
+}
+.bmw-ci-stock-raising-lg:before {
+  content: "\e08e";
+}
+.bmw-ci-stock-right-sm:before {
+  content: "\e08f";
+}
+.bmw-ci-stock-right-med:before {
+  content: "\e090";
+}
+.bmw-ci-stock-right-lg:before {
+  content: "\e091";
+}
+.bmw-ci-stock-up-sm:before {
+  content: "\e092";
+}
+.bmw-ci-stock-up-med:before {
+  content: "\e093";
+}
+.bmw-ci-stock-up-lg:before {
+  content: "\e094";
+}
+.bmw-ci-stop-sm:before {
+  content: "\e095";
+}
+.bmw-ci-stop-med:before {
+  content: "\e096";
+}
+.bmw-ci-stop-lg:before {
+  content: "\e097";
+}
+.bmw-ci-stumbleupon-sm:before {
+  content: "\e098";
+}
+.bmw-ci-stumbleupon-med:before {
+  content: "\e099";
+}
+.bmw-ci-stumbleupon-lg:before {
+  content: "\e09a";
+}
+.bmw-ci-twitter-med:before {
+  font-family: "new-twitter-icon" !important;
+  content: "\0041";
+}
+.bmw-ci-twitter-lg:before {
+  content: "\e09c";
+}
+.bmw-ci-up-nav-sm:before {
+  content: "\e09d";
+}
+.bmw-ci-up-nav-med:before {
+  content: "\e09e";
+}
+.bmw-ci-up-nav-lg:before {
+  content: "\e09f";
+}
+.bmw-ci-update-sm:before {
+  content: "\e0a0";
+}
+.bmw-ci-update-med:before {
+  content: "\e0a1";
+}
+.bmw-ci-update-lg:before {
+  content: "\e0a2";
+}
+.bmw-ci-upload-sm:before {
+  content: "\e0a3";
+}
+.bmw-ci-upload-med:before {
+  content: "\e0a4";
+}
+.bmw-ci-upload-lg:before {
+  content: "\e0a5";
+}
+.bmw-ci-user-sm:before {
+  content: "\e0a6";
+}
+.bmw-ci-user-med:before {
+  content: "\e0a7";
+}
+.bmw-ci-user-lg:before {
+  content: "\e0a8";
+}
+.bmw-ci-video-off-sm:before {
+  content: "\e0a9";
+}
+.bmw-ci-video-off-med:before {
+  content: "\e0aa";
+}
+.bmw-ci-video-off-lg:before {
+  content: "\e0ab";
+}
+.bmw-ci-videostream-sm:before {
+  content: "\e0ac";
+}
+.bmw-ci-videostream-med:before {
+  content: "\e0ad";
+}
+.bmw-ci-videostream-lg:before {
+  content: "\e0ae";
+}
+.bmw-ci-view360-sm:before {
+  content: "\e0af";
+}
+.bmw-ci-view360-med:before {
+  content: "\e0b0";
+}
+.bmw-ci-view360-lg:before {
+  content: "\e0b1";
+}
+.bmw-ci-views-sm:before {
+  content: "\e0b2";
+}
+.bmw-ci-views-med:before {
+  content: "\e0b3";
+}
+.bmw-ci-views-lg:before {
+  content: "\e0b4";
+}
+.bmw-ci-visualbrowsing-sm:before {
+  content: "\e0b5";
+}
+.bmw-ci-visualbrowsing-med:before {
+  content: "\e0b6";
+}
+.bmw-ci-visualbrowsing-lg:before {
+  content: "\e0b7";
+}
+.bmw-ci-whatsapp-sm:before {
+  content: "\e0b8";
+}
+.bmw-ci-whatsapp-med:before {
+  content: "\e0b9";
+}
+.bmw-ci-whatsapp-lg:before {
+  content: "\e0ba";
+}
+.bmw-ci-xing-sm:before {
+  content: "\e0bb";
+}
+.bmw-ci-xing-med:before {
+  content: "\e0bc";
+}
+.bmw-ci-xing-lg:before {
+  content: "\e0bd";
+}
+.bmw-ci-youtube-sm:before {
+  content: "\e0be";
+}
+.bmw-ci-youtube-med:before {
+  content: "\e0bf";
+}
+.bmw-ci-youtube-lg:before {
+  content: "\e0c0";
+}
+.bmw-ci-zoomin-sm:before {
+  content: "\e0c1";
+}
+.bmw-ci-zoomin-med:before {
+  content: "\e0c2";
+}
+.bmw-ci-zoomin-lg:before {
+  content: "\e0c3";
+}
+.bmw-ci-zoomout-sm:before {
+  content: "\e0c4";
+}
+.bmw-ci-zoomout-med:before {
+  content: "\e0c5";
+}
+.bmw-ci-zoomout-lg:before {
+  content: "\e0c6";
+}
+.bmw-ci-folder-arrow:before {
+  content: "\e0c8";
+}
+.bmw-ci-folder-plus:before {
+  content: "\e0c9";
+}
+.bmw-ci-subtitle-off-sm:before {
+  content: "\e0ca";
+}
+.bmw-ci-subtitle-off-med:before {
+  content: "\e0cb";
+}
+.bmw-ci-subtitle-off-lg:before {
+  content: "\e0cc";
+}
+.bmw-ci-subtitle-on-sm:before {
+  content: "\e0cd";
+}
+.bmw-ci-subtitle-on-med:before {
+  content: "\e0ce";
+}
+.bmw-ci-subtitle-on-lg:before {
+  content: "\e0cf";
+}
+.bmw-ci-play-sm:before {
+  content: "\e0d0";
+}
+.bmw-ci-play-on-sm:before {
+  content: "\e0d1";
+}
+.bmw-ci-play-med:before {
+  content: "\e0d2";
+}
+.bmw-ci-play-on-med:before {
+  content: "\e0d3";
+}
+.bmw-ci-play-lg:before {
+  content: "\e0d4";
+}
+.bmw-ci-play-on-lg:before {
+  content: "\e0d5";
+}
+.bmw-ci-twitter-sm:before {
+  content: "\e0d6";
+}
+.bmw-ci-detail-view:before {
+  content: "\e0d7";
+}
+.bmw-ci-folder:before {
+  content: "\e0c7";
+}
+.bmw-ci-home-med:before {
+  content: "\e009";
+}
+.bmw-ci-home-lg:before {
+  content: "\e00a";
+}
+.bmw-ci-document-hd-sm:before {
+  content: "\e0d8";
+}
+.bmw-ci-document-hd-lg:before {
+  content: "\e0d9";
+}
+.bmw-ci-document-hd-med:before {
+  content: "\e0da";
+}
